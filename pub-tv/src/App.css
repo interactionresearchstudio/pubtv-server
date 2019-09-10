@@ -1,0 +1,62 @@
+.App {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.App .AppContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.App .Intro video {
+  width: 100%;
+}
+
+.App .Grid .col img {
+  width: 100%;
+}
+
+.App .Grid .col {
+  padding: 0;
+}
+
+.green {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 56.25%;
+  background-color: #159867;
+}
+
+.spinner {
+  width: 100%;
+  height: 100%;
+  background-color: #159867;
+}
+
+.spinner .spinner-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.App .Slideshow video {
+  width: 100%;
+}
+
+.App .Slideshow img {
+  width: 100%;
+}
+
+.App .Slideshow .logo {
+  width: 100px !important;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

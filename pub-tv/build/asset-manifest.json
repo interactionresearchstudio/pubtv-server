@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7b8c0c5a.chunk.css",
+    "main.js": "/static/js/main.9e092477.chunk.js",
+    "main.js.map": "/static/js/main.9e092477.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.c363fdd6.js",
+    "runtime~main.js.map": "/static/js/runtime~main.c363fdd6.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.95cb71ba.chunk.js": "/static/js/2.95cb71ba.chunk.js",
+    "static/js/2.95cb71ba.chunk.js.map": "/static/js/2.95cb71ba.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.0a5f4875ebe170993c0ddfea31eefc60.js": "/precache-manifest.0a5f4875ebe170993c0ddfea31eefc60.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.7b8c0c5a.chunk.css.map": "/static/css/main.7b8c0c5a.chunk.css.map",
+    "static/media/NatureScenes_TV.m4v": "/static/media/NatureScenes_TV.6c49ca5a.m4v",
+    "static/media/logo.png": "/static/media/logo.d4dee490.png"
+  }
+}
