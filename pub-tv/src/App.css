@@ -1,3 +1,9 @@
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 .App {
   width: 100vw;
   height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
