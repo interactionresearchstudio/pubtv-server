@@ -59,6 +59,9 @@ class Slideshow extends React.Component {
             }
           }
         }
+        else {
+          curatedContent.push(photoContent[i]);
+        }
       }
     }
     this.setState({constructedContent: curatedContent}, () => {
@@ -77,25 +80,47 @@ class Slideshow extends React.Component {
     console.log('Current URL: ' + currentUrl);
     if (currentUrl.endsWith('.jpg')) {
       console.log('Current URL is an image.');
-      timeoutId = setTimeout(() => {
-        if (this.state.contentIndex >= this.state.constructedContent.length - 1) {
-          this.setState({
-            contentIndex: 0,
-            intervalId: timeoutId
-          }, () => {
-            console.log('End slideshow!');
-            this.props.onSlideshowEnd();
-          });
-        } else {
-          this.setState({
-            contentIndex: this.state.contentIndex+1,
-            intervalId: timeoutId
-          }, () => {
-            console.log('Cycling content...');
-            this.cycleContent();
-          });
-        }
-      }, 2000);
+      if (currentUrl.includes('@')) {
+        timeoutId = setTimeout(() => {
+          if (this.state.contentIndex >= this.state.constructedContent.length - 1) {
+            this.setState({
+              contentIndex: 0,
+              intervalId: timeoutId
+            }, () => {
+              console.log('End slideshow!');
+              this.props.onSlideshowEnd();
+            });
+          } else {
+            this.setState({
+              contentIndex: this.state.contentIndex+1,
+              intervalId: timeoutId
+            }, () => {
+              console.log('Cycling content...');
+              this.cycleContent();
+            });
+          }
+        }, 2000);
+      } else {
+        timeoutId = setTimeout(() => {
+          if (this.state.contentIndex >= this.state.constructedContent.length - 1) {
+            this.setState({
+              contentIndex: 0,
+              intervalId: timeoutId
+            }, () => {
+              console.log('End slideshow!');
+              this.props.onSlideshowEnd();
+            });
+          } else {
+            this.setState({
+              contentIndex: this.state.contentIndex+1,
+              intervalId: timeoutId
+            }, () => {
+              console.log('Cycling content...');
+              this.cycleContent();
+            });
+          }
+        }, 5000);
+      }
     } else if (currentUrl.endsWith('.mp4')) {
       timeoutId = setTimeout(() => {
         if (this.state.contentIndex >= this.state.constructedContent.length - 1) {
