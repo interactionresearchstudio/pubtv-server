@@ -19,7 +19,6 @@ class App extends React.Component {
     };
   }
 
-
   onIntroEnded() {
     if (this.state.mode === 0) {
       axios.get('/api/content')
@@ -41,7 +40,8 @@ class App extends React.Component {
 
   onSlideshowTimeout() {
     if (this.state.mode === 2) {
-      this.setState({mode: 0});
+      //this.setState({mode: 0});
+      window.location.reload();
     }
   }
 
